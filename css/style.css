@@ -1,0 +1,148 @@
+* {
+    padding: 14px;
+    margin: 14px;
+}
+
+a.skip-main {
+    left: -999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+}
+a.skip-main:focus,
+a.skip-main:active {
+    color: #fff;
+    background-color: #000;     
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow: auto;
+    margin: 10px 35%;
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.2em;
+    z-index: 999;
+}
+body {
+    font-family: Verdana, sans-serif;
+}
+
+img {
+    width: 30rem;
+    align-content: center;
+}
+nav {
+    justify-content: space-evenly;
+    padding: 1rem 2rem;
+    align-items: center;
+    font-size: large;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333; 
+}
+nav li {
+    float: left; /* Align items horizontally */
+}
+nav li a {
+    display: block;
+    color: white; /* Text color */
+    text-align: center;
+    padding: 14px 16px; /* Spacing around text */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover, a:focus {
+    border-style: solid;
+    border-radius: 20%;
+    border-width: 2px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.current-page {
+    background-color: pink;
+    font-weight: bold;
+    color: rgb(151, 16, 61);
+}
+
+main.grid,
+main {
+    display: grid;
+    max-width: 1200px;
+    padding: 20px;
+}
+main.grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+main > div {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+h1 {
+    justify-content: flex-start;
+    font-size: xx-large;
+    padding: 0px 0px 0px 24px;
+}
+h2 {
+    font-size: x-large;
+}
+h3 {
+    font-size: 1.2em; 
+    background-color: pink; 
+    display: inline-block; 
+    padding: 3px 8px; 
+    margin: 0; 
+    border-radius: 5px;
+}
+
+header h1 {
+    font-size: 2em; 
+}
+header h2 {
+    font-size: 1.5em; 
+}
+.grid, .grid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 24px;
+    justify-items: center;
+}
+
+.paintings-grid {
+    grid-template-columns: repeat(3, 1fr); 
+}
+
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px; 
+}
+
+@media (min-width: 768px) { 
+    .content-grid {
+        grid-template-columns: 1fr 1fr; 
+        gap: 30px;
+    }
+}
+
+@media (min-width: 1024px) { 
+    .content-grid {
+        grid-template-columns: 2fr 3fr 1fr; 
+        gap: 40px; 
+    }
+}
+
